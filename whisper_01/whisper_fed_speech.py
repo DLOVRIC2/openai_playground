@@ -27,7 +27,7 @@ stream = streams.first()
 # speech after Jerome Powell speaks. So we'll use ffmpeg to do this. The command will start the audio file at the 375
 # second mark where he starts with good afternoon, continue for 2715 seconds, and chop off the rest of the audio.
 # The result will be saved in a new file called fed_meeting_trimmed.mp4.
-input_file = r"G:\My Drive\Arc Capital\Python\openai_playground\fed_meeting.mp4"
+input_file = r"/whisper_01/fed_meeting.mp4"
 # subprocess.run(['ffmpeg', '-ss', '378', '-i', input_file, '-t', '2715', 'fed_meeting_trimmed.mp4'], check=True)
 
 # Transcription
