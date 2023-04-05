@@ -18,6 +18,7 @@ app = Flask(__name__)
 with open('data.json') as f:
     data = json.load(f)
 
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     search_term = ""

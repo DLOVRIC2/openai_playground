@@ -4,5 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="ai" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="maths_search_engine" />
+    <orderEntry type="module" module-name="voice_trader_bot" />
+    <orderEntry type="module" module-name="python_projects" />
   </component>
 </module>
