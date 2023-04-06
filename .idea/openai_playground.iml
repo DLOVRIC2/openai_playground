@@ -7,5 +7,6 @@
     <orderEntry type="module" module-name="maths_search_engine" />
     <orderEntry type="module" module-name="voice_trader_bot" />
     <orderEntry type="module" module-name="python_projects" />
+    <orderEntry type="module" module-name="newsletter_app" />
   </component>
 </module>
