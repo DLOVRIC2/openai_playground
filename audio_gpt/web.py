@@ -4,9 +4,7 @@ import os
 import requests
 from dotenv import load_dotenv
 import soundfile as sf
-import pyttsx3
-import subprocess
-
+from pydub import AudioSegment
 
 load_dotenv()
 openai.api_key = os.getenv("API_KEY")
@@ -80,6 +78,20 @@ def transcribe_message(audio):
 
     return chat_transcript
 
+    # TODO: Get the audio file to be played by the gradio instaed of mp3 player
+    # # Convert the MP3 file to a WAV file
+    # audio_path = os.path.abspath("./output_voice.mp3")
+    # wav_path = os.path.abspath("./output_voice.wav")
+    # sound = AudioSegment.from_mp3(audio_path)
+    # sound.export(wav_path, format="wav")
+    #
+    # # Read the audio file and return it along with the transcript
+    # with open(wav_path, 'rb') as f:
+    #     audio_bytes = f.read()
+    # return chat_transcript, audio_bytes
+    #
 
+# ui = gr.Interface(fn=transcribe_message, inputs=gr.Audio(source="microphone", type="numpy", interactive=True), outputs=["text", gr.Audio])
 ui = gr.Interface(fn=transcribe_message, inputs=gr.Audio(source="microphone", type="numpy", interactive=True), outputs="text")
 ui.launch()
+
