@@ -95,3 +95,4 @@ def transcribe_message(audio):
 ui = gr.Interface(fn=transcribe_message, inputs=gr.Audio(source="microphone", type="numpy", interactive=True), outputs="text")
 ui.launch()
 
+
