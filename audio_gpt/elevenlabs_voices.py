@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # voice settings
-STABILITY = 0
-SIMILARITY_BOOST = 0
+STABILITY = 0.1
+SIMILARITY_BOOST = 0.8
 
 # streaming chunk size
 CHUNK_SIZE = 1024
