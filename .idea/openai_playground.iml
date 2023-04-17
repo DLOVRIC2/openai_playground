@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="python_projects" />
     <orderEntry type="module" module-name="newsletter_app" />
     <orderEntry type="module" module-name="Auto-GPT" />
+    <orderEntry type="module" module-name="ai_photo_generation" />
   </component>
 </module>
